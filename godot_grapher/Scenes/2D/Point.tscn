@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxFlat" id=7]
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Point" type="Panel"]
+margin_left = 988.0
+margin_top = 353.0
+margin_right = 1003.0
+margin_bottom = 368.0
+custom_styles/panel = SubResource( 7 )
+
