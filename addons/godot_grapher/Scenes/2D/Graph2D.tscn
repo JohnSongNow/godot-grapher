@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/godot_grapher/Scripts/2D/Graph2D.cs" type="Script" id=1]
+[ext_resource path="res://addons/godot_grapher/icon.png" type="Texture" id=2]
+[ext_resource path="res://addons/godot_grapher/Scenes/2D/Axis2D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://addons/godot_grapher/Scripts/2D/Axis2D.cs" type="Script" id=4]
+[ext_resource path="res://addons/godot_grapher/Scenes/Legend/Legend.tscn" type="PackedScene" id=5]
+[ext_resource path="res://addons/godot_grapher/Scripts/Legend/Legend.cs" type="Script" id=6]
+
+[node name="Graph2D" type="Control"]
+margin_right = 457.0
+margin_bottom = 370.0
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_icon": ExtResource( 2 )
+}
+
+[node name="XAxis" type="Control" parent="." instance=ExtResource( 3 )]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+
+[node name="YAxis" type="Control" parent="." instance=ExtResource( 3 )]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+
+[node name="Points" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Legend" type="Control" parent="." instance=ExtResource( 5 )]
+margin_left = 638.0
+margin_top = 11.0
+margin_right = 678.0
+margin_bottom = 51.0
+script = ExtResource( 6 )
+
+[node name="Title" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+
