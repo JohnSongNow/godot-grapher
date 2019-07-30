@@ -10,7 +10,6 @@ public class Graph2D : Control
 
     // options
     public Boolean autoScale = true;
-    public Boolean logScale = false;
 
     // state information
     public List<Vector2> values;
@@ -111,7 +110,7 @@ public class Graph2D : Control
             yAxis.ResetScale();
         }
 
-        if (logScale)
+        if (yAxis.logScale)
         {
             // plot the after the scales have been reset
             Vector2 diff = new Vector2(xAxis.scale.y - xAxis.scale.x, (float)Math.Log10(yAxis.scale.y - yAxis.scale.x));
@@ -193,5 +192,7 @@ public class Graph2D : Control
         yAxis.scale = yAxisScale;
         xAxis.ResetScale();
         yAxis.ResetScale();
+
+        Resize();
     }
 }
