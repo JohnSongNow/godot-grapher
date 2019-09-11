@@ -1,4 +1,4 @@
-w Godot-Grapher
+# Godot-Grapher
 An addon for Godot 3 in C# used to generate simple graphs.
 
 # Introduction
