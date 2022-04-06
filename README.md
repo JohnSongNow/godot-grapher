@@ -39,11 +39,7 @@ graph.Resize();
 Below is an example using data of historic CPU trends found [here](https://github.com/karlrupp/microprocessor-trend-data/tree/master/42yrs);
 ![alt text](https://github.com/JohnSongNow/godot-grapher/blob/master/example/images/graph_example.png "2D Scatterplot Example")
 
-# Future Works
-- Linear regression
-- Scatterplots
-- Support for auto generated ticks.
+This library is used in tandum with [Godot Video Tools](https://github.com/JohnSongNow/godot-video-tools) to create visuals and demostrations.
 
 ## License
-
-MIT license, furthur information can be found in the [license.txt](https://github.com/JohnSongNow/godot-grapher/license.txt) file.O
+This uses the MIT license.
